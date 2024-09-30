@@ -21,5 +21,5 @@ soup = BeautifulSoup(r.text, 'html.parser')
 # print(soup) # 가져온 html 데이터 출력
 
 # #conts > div.chart > div > ul > li.on.nth1 > div > ul > li:nth-child(1) > div.rank_cntt > div.rank_info > p > a
-title = soup.select_one('#conts > div.chart > div > ul > li.on.nth1 > div > ul > li:nth-child(1) > div.rank_cntt > div.rank_info > p > a')
+title = soup.select_one('#conts > div.chart > div > ul > li.on.nth1 > div > ul > li:nth-child(2) > div.rank_cntt > div.rank_info > p > a')
 print(title.text)
